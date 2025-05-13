@@ -1,9 +1,19 @@
-
+/*# sourceMappingURL=styles.css.map */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* VARIABLES COLORES Y MARGENES */
+
+$bg-primary: #6a1e55;
+$bg-secondary: #3b1c32;
+$text-primary: #a64d79;
+$text-secondary: #1a1a1d;
+$margen-chico: 8px;
+$margen-grande: 16px;
+
+/* TERMINA VARIABLES COLORES Y MARGENES */
 
 body {
   background-color: #1a1a1d;
@@ -33,5 +43,3 @@ a {
 a.nav-link.active {
   color: white !important;
 }
-
-/*# sourceMappingURL=styles.css.map */
