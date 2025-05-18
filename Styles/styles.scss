@@ -1,4 +1,5 @@
 /*# sourceMappingURL=styles.css.map */
+
 * {
   margin: 0;
   padding: 0;
@@ -31,4 +32,7 @@ a {
 
 a.nav-link.active {
   color: white !important;
+}
+
+@media (min-width: 800px) {
 }
