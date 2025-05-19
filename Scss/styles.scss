@@ -1,4 +1,4 @@
-
+/*# sourceMappingURL=styles.css.map */
 * {
   margin: 0;
   padding: 0;
@@ -8,19 +8,33 @@
 /* Fonts */
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
   font-weight: bold;
   font-style: normal;
 }
 /* Fonts */
 /* VARIABLES COLORES, MARGENES, FONTS */
+
+$bg-primary: #6a1e55;
+$bg-secondary: #3b1c32;
+$text-primary: #a64d79;
+$text-secondary: #1a1a1d;
+
+$margen-chico: 8px;
+$margen-grande: 16px;
+
+$font-uno: "Plein", sans-serif;
+
 /* TERMINA VARIABLES COLORES, MARGENES, FONTS */
+
 body {
   background-color: #1a1a1d;
   font-family: Arial, Helvetica, sans-serif; /* pedir la fuente*/
@@ -49,5 +63,3 @@ a {
 a.nav-link.active {
   color: white !important;
 }
-
-/*# sourceMappingURL=styles.css.map */
