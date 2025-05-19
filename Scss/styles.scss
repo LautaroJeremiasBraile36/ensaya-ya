@@ -4,16 +4,36 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* VARIABLES COLORES Y MARGENES */
+
+/* Fonts */
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+/* Fonts */
+/* VARIABLES COLORES, MARGENES, FONTS */
 
 $bg-primary: #6a1e55;
 $bg-secondary: #3b1c32;
 $text-primary: #a64d79;
 $text-secondary: #1a1a1d;
+
 $margen-chico: 8px;
 $margen-grande: 16px;
 
-/* TERMINA VARIABLES COLORES Y MARGENES */
+$font-uno: "Plein", sans-serif;
+
+/* TERMINA VARIABLES COLORES, MARGENES, FONTS */
 
 body {
   background-color: #1a1a1d;

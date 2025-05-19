@@ -5,6 +5,22 @@
   box-sizing: border-box;
 }
 
+/* Fonts */
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+/* Fonts */
+/* VARIABLES COLORES, MARGENES, FONTS */
+/* TERMINA VARIABLES COLORES, MARGENES, FONTS */
 body {
   background-color: #1a1a1d;
   font-family: Arial, Helvetica, sans-serif; /* pedir la fuente*/
