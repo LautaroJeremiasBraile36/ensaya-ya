@@ -45,7 +45,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  color: #a64d79;
+  color: $bg-primary;
 }
 
 .logo {
@@ -93,4 +93,37 @@ footer {
   display: flex;
   justify-content: center;
   gap: 8px;
+}
+@media (min-width: 600px) {
+  main {
+    width: 74vh;
+    height: 60vh;
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    height: auto;
+    width: auto;
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+  button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1d;
+    color: $bg-primary;
+    width: 181px;
+    height: 51px;
+    border-radius: 20px;
+  }
 }
