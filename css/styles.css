@@ -1,4 +1,4 @@
-/*# sourceMappingURL=styles.css.map */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,36 +8,22 @@
 /* Fonts */
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
-    format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
-    format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
   font-weight: bold;
   font-style: normal;
 }
 /* Fonts */
 /* VARIABLES COLORES, MARGENES, FONTS */
-
-$bg-primary: #6a1e55;
-$bg-secondary: #3b1c32;
-$text-primary: #a64d79;
-$text-secondary: #1a1a1d;
-
-$margen-chico: 8px;
-$margen-grande: 16px;
-
-$font-uno: "Plein", sans-serif;
-
 /* TERMINA VARIABLES COLORES, MARGENES, FONTS */
-
 body {
   background-color: #1a1a1d;
-  font-family: $font-uno;
+  font-family: "Plein", sans-serif;
   font-weight: bold;
   color: #a64d79;
 }
@@ -45,33 +31,34 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  color: $bg-primary;
+  color: #6a1e55;
 }
 
 .logo {
   width: 13vh;
   height: 13vh;
 }
+
 main {
   width: 50vh;
   height: 70vh;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
-  button {
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1a1a1d;
-    color: $bg-primary;
-    width: 181px;
-    height: 51px;
-    border-radius: 20px;
-  }
 }
+main img {
+  width: 100%;
+  height: 100%;
+}
+main button {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a1a1d;
+  color: #6a1e55;
+  width: 181px;
+  height: 51px;
+  border-radius: 20px;
+}
+
 section {
   width: 300px;
   height: auto;
@@ -94,6 +81,7 @@ footer {
   justify-content: center;
   gap: 8px;
 }
+
 @media (min-width: 600px) {
   main {
     width: 74vh;
@@ -105,7 +93,6 @@ footer {
     left: 50%;
   }
 }
-
 @media (min-width: 800px) {
   main {
     height: auto;
@@ -121,9 +108,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1a1a1d;
-    color: $bg-primary;
+    color: #6a1e55;
     width: 181px;
     height: 51px;
     border-radius: 20px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
