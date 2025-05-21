@@ -1,14 +1,15 @@
-
 /* Fonts */
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: Plein;
-  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
   font-weight: bold;
   font-style: normal;
 }
@@ -23,8 +24,8 @@
 
 body {
   background-color: #000000;
-  font-family: "Plein", sans-serif;
-  font-weight: bold;
+  font-family: "Plein", sans-serif !important;
+  font-size: large !important;
   color: #a64d79;
 }
 
@@ -40,6 +41,7 @@ header .logo {
 header .container-fluid {
   display: flex;
   justify-content: end !important;
+  margin-top: 15px;
 }
 header .nav-item {
   display: flex;
@@ -51,8 +53,8 @@ main {
   height: 100%;
 }
 main img {
-  width: 344px;
-  height: 400px;
+  width: 100%;
+  height: 70vh;
 }
 main button {
   position: relative;
@@ -64,14 +66,16 @@ main button {
   width: 200px;
   height: 70px;
   border-radius: 100px;
+  font-size: 1rem;
 }
 
-section {
+p {
   width: 300px;
   height: auto;
   text-align: center;
   margin-top: 5px;
   margin-left: 23px;
+  font-size: 1rem;
 }
 
 a {
@@ -86,39 +90,68 @@ a.nav-link.active {
 footer {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 @media (min-width: 600px) {
-  main {
-    width: 74vh;
-    height: 60vh;
+  main .principal {
+    width: 600;
+    height: auto;
   }
-  button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  main button {
+    transform: translate(-50%, -340%);
+    width: 240px;
+    height: 70px;
+    font-size: 1rem;
+    font-size: larger;
+    font-weight: bold;
+  }
+  p {
+    width: auto;
+    height: auto;
+    font-size: 1.4rem;
   }
 }
-@media (min-width: 800px) {
-  main {
-    height: auto;
-    width: auto;
+@media (min-width: 1020px) {
+  header {
+    margin-right: 60px;
+    margin-left: 10px;
   }
-  img {
-    width: auto;
-    height: auto;
+  header .logo {
+    width: 21vh;
+    height: 21vh;
   }
-  button {
+  .container {
+    display: flex;
+    height: 63vh;
+  }
+  .principal {
+    height: 70%;
+    width: 76vh;
+  }
+  .principal img {
+    width: 100%;
+    height: 140%;
+  }
+  .principal button {
     position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1a1a1d;
+    transform: translate(-170%, 40%);
+    background-color: #000000;
     color: #6a1e55;
-    width: 181px;
-    height: 51px;
-    border-radius: 20px;
+    width: 185px;
+    height: 60px;
+    border-radius: 100px;
+    font-size: 1rem;
+  }
+  p {
+    width: 455px;
+    margin-left: 53px;
+    text-align: center;
+    margin-top: 46px;
+    font-size: 1.3rem;
+  }
+  footer {
+    margin-top: 45px;
   }
 }
 
