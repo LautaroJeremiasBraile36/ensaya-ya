@@ -1,9 +1,4 @@
 /*# sourceMappingURL=styles.css.map */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* Fonts */
 @font-face {
@@ -34,9 +29,14 @@ $margen-grande: 16px;
 $font-uno: "Plein", sans-serif;
 
 /* TERMINA VARIABLES COLORES, MARGENES, FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #1a1a1d;
+  background-color: #000000;
   font-family: $font-uno;
   font-weight: bold;
   color: #a64d79;
@@ -46,30 +46,38 @@ header {
   display: flex;
   justify-content: space-between;
   color: $bg-primary;
-}
 
-.logo {
-  width: 13vh;
-  height: 13vh;
+  .logo {
+    width: 13vh;
+    height: 13vh;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: end !important;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: end !important;
+  }
 }
 main {
-  width: 50vh;
-  height: 70vh;
+  width: 100%;
+  height: 100%;
   img {
-    width: 100%;
-    height: 100%;
+    width: 344px;
+    height: 400px;
   }
 
   button {
-    position: absolute;
-    top: 62%;
+    position: relative;
+    top: 44%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1a1a1d;
+    transform: translate(-50%, -327%);
+    background-color: #000000;
     color: $bg-primary;
-    width: 181px;
-    height: 51px;
-    border-radius: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 100px;
   }
 }
 section {
