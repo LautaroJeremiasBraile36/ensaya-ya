@@ -1,45 +1,137 @@
 /*# sourceMappingURL=styles.css.map */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+/* Fonts */
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
+  font-weight: normal;
+  font-style: normal;
 }
-/* VARIABLES COLORES Y MARGENES */
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff)
+    format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+/* Fonts */
+/* VARIABLES COLORES, MARGENES, FONTS */
 
 $bg-primary: #6a1e55;
 $bg-secondary: #3b1c32;
 $text-primary: #a64d79;
 $text-secondary: #1a1a1d;
+
 $margen-chico: 8px;
 $margen-grande: 16px;
 
-/* TERMINA VARIABLES COLORES Y MARGENES */
+$font-uno: "Plein", sans-serif;
+
+/* TERMINA VARIABLES COLORES, MARGENES, FONTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #1a1a1d;
-  font-family: Arial, Helvetica, sans-serif; /* pedir la fuente*/
+  background-color: #000000;
+  font-family: $font-uno;
   font-weight: bold;
   color: #a64d79;
 }
 
 header {
   display: flex;
-  color: #a64d79;
-  gap: 8px;
-  justify-content: end;
-}
+  justify-content: space-between;
+  color: $bg-primary;
 
-.logo {
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  margin: 5px;
+  .logo {
+    width: 13vh;
+    height: 13vh;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: end !important;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: end !important;
+  }
+}
+main {
+  width: 100%;
+  height: 100%;
+  img {
+    width: 344px;
+    height: 400px;
+  }
+
+  button {
+    position: relative;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -327%);
+    background-color: #000000;
+    color: $bg-primary;
+    width: 200px;
+    height: 70px;
+    border-radius: 100px;
+  }
+}
+section {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 23px;
 }
 
 a {
   color: #a64d79 !important;
+  text-decoration: none;
 }
 
 a.nav-link.active {
   color: white !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+@media (min-width: 600px) {
+  main {
+    width: 74vh;
+    height: 60vh;
+  }
+  button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    height: auto;
+    width: auto;
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+  button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a1d;
+    color: $bg-primary;
+    width: 181px;
+    height: 51px;
+    border-radius: 20px;
+  }
 }
