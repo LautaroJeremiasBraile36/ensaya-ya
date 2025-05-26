@@ -7,65 +7,45 @@
 /* VARIABLES COLORES Y MARGENES */
 /* TERMINA VARIABLES COLORES Y MARGENES */
 /* FONTS */
+/* Fonts */
 @font-face {
   font-family: Plein;
   src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
   font-weight: normal;
-  font-size: normal;
+  font-style: normal;
 }
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/WEB/fonts/Plein-Regular.woff) format(truetype);
+  font-weight: bold;
+  font-style: normal;
+}
+/* Fonts */
 /* FONTS */
 body {
-  font-family: plein;
-  font-weight: bold;
+  background-color: #000000;
+  font-family: "Plein", sans-serif !important;
+  font-size: large !important;
+  color: #a64d79;
 }
 
-.header {
-  height: 10vh;
-  width: 100%;
+header {
   display: flex;
-  align-items: center;
-  background-color: #000000;
-  color: #a64d79;
-  position: relative;
+  justify-content: space-between;
+  color: #6a1e55;
 }
-.header .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+header .logo {
+  width: 15vh;
+  height: 15vh;
+}
+header .container-fluid {
   display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 10vh;
-  width: 100px;
+  justify-content: end !important;
+  margin-top: 15px;
 }
-.header .img-logo {
-  width: 200px;
-  height: 200px;
-}
-.header .contenedor-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-.header .contenedor-nav .navbar {
+header .nav-item {
   display: flex;
-  justify-content: end;
-  align-items: end;
-  background-color: #000000;
-}
-.header .contenedor-nav .navbar .container-fluid {
-  width: 220px;
-}
-.header .contenedor-nav .navbar .container-fluid .navbar-toggler-icon {
-  border: none;
-  color: white;
-}
-.header .contenedor-nav .navbar .container-fluid a {
-  color: #a64d79 !important;
-}
-.header .contenedor-nav .navbar .container-fluid a.nav-link.active {
-  color: white !important;
+  justify-content: end !important;
 }
 
 .main-lugares {
@@ -100,7 +80,7 @@ body {
   object-fit: cover !important;
   color: #a64d79;
   background-color: #000000;
-  border: 1px solid #000000;
+  border: 1px solid #6a1e55;
   border-radius: 32px;
   padding: 12px;
   text-align: center;
