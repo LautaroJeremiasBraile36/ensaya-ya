@@ -44,8 +44,17 @@ header .container-fluid {
   margin-top: 15px;
 }
 header .nav-item {
+  text-decoration: none;
   display: flex;
   justify-content: end !important;
+  color: #a64d79 !important;
+}
+header .nav-item .nav-link {
+  color: #a64d79 !important;
+  text-decoration: none !important;
+}
+header .nav-item .active {
+  color: white !important;
 }
 
 .main-lugares {

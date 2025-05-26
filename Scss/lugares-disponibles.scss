@@ -57,9 +57,18 @@ header {
     margin-top: 15px;
   }
   .nav-item {
+    text-decoration: none;
     display: flex;
     justify-content: end !important;
-    $text-primary: #a64d79 !important;
+    color: #a64d79 !important;
+    .nav-link {
+      color: #a64d79 !important;
+      text-decoration: none !important;
+    }
+
+    .active {
+      color: white !important;
+    }
   }
 }
 
