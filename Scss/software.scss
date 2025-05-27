@@ -1,0 +1,282 @@
+$bg-primary: #6a1e55;
+$bg-secondary: #3b1c32;
+$text-primary: #a64d79;
+$text-secondary: #1a1a1d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Plein;
+  src: url(../Assets/Fonts/Plein/Fonts/TTF/Plein-Variable.ttf);
+}
+@font-face {
+  font-family: General Sans;
+  src: url(..//Assets/Fonts/GeneralSans/Fonts/TTF/GeneralSans-Variable.ttf);
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: $bg-primary;
+
+  .logo {
+    width: 13vh;
+    height: 13vh;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: end !important;
+    margin-top: 15px;
+  }
+  .nav-item {
+    display: flex;
+    justify-content: end !important;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #a64d79 !important;
+  text-decoration: none;
+}
+
+a.nav-link.active {
+  color: white !important;
+}
+
+// Mixin
+
+@mixin section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@mixin box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+
+@mixin button {
+  background-color: black;
+  color: #a64d79;
+  font-family: Plein;
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  padding: 10px 20px;
+  border-radius: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+@mixin img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+@mixin text {
+  color: #a64d79;
+  font-family: General Sans;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+@mixin footer {
+  color: #a64d79;
+  font-family: General Sans;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+// Propiedades
+
+.section-one,
+.section-two {
+  @include section;
+}
+
+.box-one,
+.box-two {
+  @include box;
+}
+
+.text-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.img-one,
+.img-two {
+  @include img;
+}
+
+.button-one,
+.button-two {
+  @include button;
+}
+
+.text-one,
+.text-two {
+  @include text;
+}
+
+.footer {
+  @include footer;
+}
+
+@media (min-width: 600px) {
+  .box-one,
+  .box-two {
+    height: 400px;
+  }
+
+  .text-one,
+  .text-two {
+    font-size: 1.1em;
+    padding: 30px;
+  }
+
+  .button-one,
+  .button-two {
+    font-size: 1.3em;
+    padding: 12px 25px;
+  }
+
+  .footer {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1040px) {
+  .box-one,
+  .box-two {
+    height: 500px;
+  }
+
+  .text-one,
+  .text-two {
+    font-size: 1.3em;
+    padding: 40px;
+    line-height: 1.6;
+  }
+
+  .button-one,
+  .button-two {
+    font-size: 1.6em;
+    padding: 15px 30px;
+  }
+
+  .footer {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    height: calc(100vh - 80px);
+  }
+
+  .section-one,
+  .section-two {
+    flex-direction: row;
+    height: 50%;
+    align-items: center;
+  }
+
+  .box-one,
+  .box-two {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .section-two {
+    flex-direction: row-reverse;
+  }
+
+  .img-one,
+  .img-two {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+  }
+
+  .button-one,
+  .button-two {
+    background-color: black;
+    color: #a64d79;
+    font-family: Plein;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    padding: 15px 30px;
+    border-radius: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .text-one,
+  .text-two {
+    color: #a64d79;
+    font-family: General Sans;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
+    margin: auto;
+  }
+
+  .footer {
+    height: 80px;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
