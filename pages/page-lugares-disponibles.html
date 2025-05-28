@@ -17,89 +17,105 @@
     <title>Ensaya-Ya</title>
   </head>
   <body>
-    <div id="contenedor-lugares">
+    <section id="contenedor-lugares">
       <header class="header">
-        <div class="logo">
-          <img
-            src="../Assets/Image/EnsayaYaLogo.png"
-            alt="Logo"
-            class="img-logo"
-          />
+        <div>
+          <img class="logo" src="../Assets/Image/EnsayaYaLogo.png" alt="Logo" />
         </div>
-        <div class="contenedor-nav">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html"
-                      >Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="./pages/page-implementacion-software.html"
-                      >Software</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      href="./pages/page-lugares-disponibles.html"
-                      >Lugares Disponibles</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="./pages/page-preguntas-frecuentes.html"
-                      >Preguntas Frecuentes</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/page-sobre-nosotros.html"
-                      >Sobre Nosotros</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/page-testimonios.html"
-                      >Testimonios</a
-                    >
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./page-implementacion-software.html"
+                    >Software</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    href="./page-lugares-disponibles.html"
+                    >Lugares Disponibles</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./page-preguntas-frecuentes.html"
+                    >Preguntas Frecuentes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./page-sobre-nosotros.html"
+                    >Sobre Nosotros</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./page-testimonios.html"
+                    >Testimonios</a
+                  >
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 
       <main class="main-lugares">
-        <div class="contenedor-img-section">
+        <section class="contenedor-img-section">
           <img
             src="../Assets/Image/IMG Section 2.webp"
             alt="lugares-disponibles-img"
             class="img-lugares"
           />
-          <h2 class="titulo">¡ESPACIOS HECHOS PARA TU CREATIVIDAD!</h2>
-        </div>
+          <button class="titulo wiggle">
+            ¡ESPACIOS HECHOS PARA TU CREATIVIDAD!
+          </button>
+        </section>
+        <section class="blanco"></section>
+        <section class="contenedor-p">
+          <p class="parrafo">
+            Encuentra salas de ensayo equipadas con todo lo que necesitas:
+            baterías, pianos, amplificadores, y más. Desde estudios íntimos
+            hasta espacios amplios para bandas, cada lugar está listo para dar
+            vida a tu música. Filtrá por ubicación, precio o equipamento y
+            reserva en minutos.
+          </p>
+        </section>
+        <section class="blanco"></section>
+        <section class="contenedor-img-section">
+          <img
+            src="../Assets/Image/IMG Section 5.webp"
+            alt="lugares-disponibles-img"
+            class="img-lugares"
+          />
+          <h2 class="titulo2 wiggle">¡VER LUGARES DISPONIBLES!</h2>
+        </section>
+        <section class="blanco"></section>
       </main>
       <footer class="footer-lugares">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-tiktok"></i>
+        <section class="contenedor-icon">
+          <i class="fa-brands fa-instagram icon"></i>
+          <i class="fa-brands fa-facebook icon"></i>
+          <i class="fa-brands fa-tiktok icon"></i>
+        </section>
+        <section class="contenedor-p-footer">
+          <p class="p-footer">EnsayaYa © 2024 | Términos y Condiciones</p>
+        </section>
       </footer>
 
       <script
@@ -107,6 +123,6 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"
       ></script>
-    </div>
+    </section>
   </body>
 </html>
