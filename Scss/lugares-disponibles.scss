@@ -137,6 +137,7 @@ body {
       }
       .active {
         color: white !important;
+        background-color: $text-primary;
       }
     }
   }
@@ -328,6 +329,7 @@ body {
         }
         .active {
           color: white !important;
+          background-color: $text-primary;
         }
       }
     }
