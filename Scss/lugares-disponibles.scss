@@ -6,7 +6,7 @@
 
 /* MIXINS */
 @mixin titulo {
-  font-family: Plein-Regular;
+  font-family: $font1;
   font-weight: 1000;
   font-size: 0.7rem;
   width: 200px;
@@ -38,7 +38,7 @@ $text-secondary: #000000;
 $margen-chico: 8px;
 $margen-grande: 16px;
 $padding: 12px 8px;
-$font1: Plein;
+$font1: Plein-Regular;
 /* TERMINA VARIABLES COLORES Y MARGENES */
 
 /* FONTS */
@@ -63,7 +63,7 @@ $font1: Plein;
 
 body {
   background-color: #000000;
-  font-family: "Plein", sans-serif !important;
+  font-family: $font1, sans-serif !important;
   font-size: large !important;
   color: #a64d79;
 }
@@ -85,7 +85,6 @@ body {
   .container-fluid {
     display: flex;
     justify-content: end !important;
-    margin-top: 15px;
     top: 0;
     right: 0;
   }
@@ -94,9 +93,12 @@ body {
     display: flex;
     justify-content: end !important;
     color: #a64d79 !important;
+
     .nav-link {
       color: #a64d79 !important;
       text-decoration: none !important;
+      font-family: $font1;
+      font-weight: 800;
     }
 
     .active {
@@ -111,6 +113,8 @@ body {
   margin-top: 10vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .contenedor-img-section {
     border: #000000;
@@ -168,11 +172,9 @@ body {
     height: 45vh;
     width: 100%;
     background-color: #000000;
+    z-index: -1;
   }
   .contenedor-p {
-    font-family: $font1;
-    font-size: 1rem;
-    font-weight: 400;
     height: 50vh;
     width: 100%;
     padding: 24px;
@@ -182,8 +184,12 @@ body {
     align-items: center;
 
     .parrafo {
+      font-family: $font1;
+      font-size: 1rem;
+      font-weight: 400;
       background-color: transparent;
       padding: 8px;
+      display: flex;
       justify-content: center;
       align-items: center;
       text-align: justify;
@@ -249,3 +255,51 @@ body {
     }
   }
 }
+
+/* MEDIA QUERYS */
+/* DESKTOP */
+@media (min-width: 768px) and (min-width: 1200px) {
+  .header {
+    .logo {
+      width: 15vh;
+      height: 15vh;
+    }
+  }
+  .main-lugares {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    .contenedor-img-section {
+      .titulo {
+        @include titulo();
+        width: 400px;
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+      .titulo2 {
+        @include titulo();
+        background-color: $text-primary;
+        color: $text-secondary;
+        width: 400px;
+        font-size: 1.2rem;
+        font-weight: 1000;
+      }
+    }
+    .contenedor-p {
+      width: 600px;
+      height: 30vh;
+
+      .parrafo {
+        font-size: 1.5rem;
+        font-weight: 800;
+        justify-content: center;
+        align-items: center;
+
+        padding: 48px;
+      }
+    }
+  }
+}
+/* DESKTOP */
+/* MEDIA QUERYS */
