@@ -97,6 +97,7 @@ body {
 }
 .header .navbar-nav .nav-item .active {
   color: white !important;
+  background-color: #a64d79;
 }
 
 .main-lugares {
@@ -316,6 +317,7 @@ body {
   }
   .header .navbar-nav .nav-item .active {
     color: white !important;
+    background-color: #a64d79;
   }
   .main-lugares {
     display: flex;
